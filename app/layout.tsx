@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import PageWrapper from "./components/PageWrapper/PageWrapper";
+import PageWrapper from "./components/pageWrapper/PageWrapper";
 
 export const metadata: Metadata = {
   title: "Create Next App",
