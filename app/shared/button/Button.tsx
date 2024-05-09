@@ -11,6 +11,8 @@ interface IButton {
   isLoading?: boolean;
   disabled?: boolean;
   style?: any;
+  icon?: any;
+  styleIcon?: string;
 }
 
 const Button: FC<PropsWithChildren<IButton>> = ({
@@ -23,6 +25,8 @@ const Button: FC<PropsWithChildren<IButton>> = ({
   isLoading,
   disabled,
   style,
+  icon,
+  styleIcon,
 }) => {
   return (
     <button
@@ -37,6 +41,7 @@ const Button: FC<PropsWithChildren<IButton>> = ({
       ) : (
         children
       )}
+      <div className={`${styleIcon} mt-[2px]`}>{icon}</div>
     </button>
   );
 };

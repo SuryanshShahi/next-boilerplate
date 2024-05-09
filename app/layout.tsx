@@ -14,8 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <PageWrapper>{children}</PageWrapper>
+      <body className="max-w-3xl bg-black/50 mx-auto flex h-screen flex-col justify-center items-center">
+        <div className="bg-white w-full h-[calc(100vh-200px)] rounded-3xl">
+          <PageWrapper>{children}</PageWrapper>
+        </div>
       </body>
     </html>
   );

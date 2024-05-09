@@ -28,7 +28,7 @@ const PageWrapper: FC<PropsWithChildren<IPageWraps>> = ({
   typeof window !== "undefined" && window.addEventListener("scroll", slideNav);
   return (
     <Fragment>
-      <div className="animate-bottom">
+      <div className="animate-bottom justify-between flex flex-col h-full">
         <Navbar />
         <div className={`bg-white ${wrapperClass}`}>{children}</div>
         {isActive && (
